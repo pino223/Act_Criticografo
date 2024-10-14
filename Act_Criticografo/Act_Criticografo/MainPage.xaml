@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Act_Criticografo.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Actividad: Criticografo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Nombre:" FontSize="25" TextColor="Black"/>
+        <Entry Placeholder="Ingresa el nombre" x:Name="Nombre" Keyboard="Text"/>
+        <Label Text="Genero" TextColor="Black" FontSize="25"/>
+        
+        <StackLayout Orientation="Horizontal">
+            <RadioButton Value="Hombre" x:Name="Hom" IsChecked="False" FontSize="50" ></RadioButton>
+            <Label Text="Hombre" FontSize="18" FontAttributes="Bold" Padding="0,20,30,0"></Label>
+            <RadioButton Value="Mujer" x:Name="Muj" IsChecked="False" FontSize="50" ></RadioButton>
+            <Label Text="Mujer" FontSize="18" FontAttributes="Bold" Padding="0,20,30,0"></Label>
+        </StackLayout>
+
+        <Grid>
+            <CheckBox Grid.Column="0" Grid.Row="0" VerticalOptions="Center" Color="Blue" IsChecked="False" x:Name="Alto" />
+            
+            <Label Text="Alto"  Margin="50" Grid.Column="0" Grid.Row="0" FontSize="19"/>
+            
+            <CheckBox Grid.Column="0" Grid.Row="1" VerticalOptions="Center" Color="Blue" IsChecked="False" x:Name="Listo" />
+
+            <Label Text="Listo"  Margin="50" Grid.Column="0" Grid.Row="1" FontSize="19"/>
+            
+            <CheckBox Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Color="Blue" IsChecked="False" x:Name="Raro" />
+
+            <Label Text="Raro"  Margin="50" Grid.Column="0" Grid.Row="2" FontSize="19"/>
+
+            <CheckBox Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Color="Blue" IsChecked="False" x:Name="Feo" />
+
+            <Label Text="Feo"  Margin="50" Grid.Column="1" Grid.Row="0" FontSize="19"/>
+
+            <CheckBox Grid.Column="1" Grid.Row="1" VerticalOptions="Center" Color="Blue" IsChecked="False" x:Name="Extravagante" />
+
+            <Label Text="Extravagante"  Margin="45" Grid.Column="1" Grid.Row="1" FontSize="19"/>
+
+            <CheckBox Grid.Column="1" Grid.Row="2" VerticalOptions="Center" Color="Blue" IsChecked="False" x:Name="Grande" />
+
+            <Label Text="Grande"  Margin="50" Grid.Column="1" Grid.Row="2" FontSize="19"/>
+
+            
+        </Grid>
+        <Button Text="Criticar" Clicked="Button_Critica"></Button>
+
+    </StackLayout>
+
+</ContentPage>
